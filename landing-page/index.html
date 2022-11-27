@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html ⚡4email data-css-strict>
+
+<head>
+  <meta charset="utf-8" />
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  <style amp4email-boilerplate>
+    body {
+      visibility: hidden;
+    }
+  </style>
+  <style amp-custom>
+    /* reset styles */
+
+    body,
+    * {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    amp-img {
+      display: block;
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+
+    /* grid system */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+    }
+
+    .col-6 {
+      flex: 0 0 48%;
+      max-width: 48%;
+    }
+
+    .col-4 {
+      flex: 0 0 33%;
+      max-width: 33%;
+    }
+
+    .col-3-5 {
+      flex: 0 0 58%;
+      max-width: 58%;
+    }
+
+    .col-2-5 {
+      flex: 0 0 38%;
+      max-width: 38%;
+    }
+
+    /* helper classes */
+    /* colors */
+    .accent-color {
+      color: #8844ff;
+    }
+
+    .secondary-color {
+      color: #3f52c6;
+    }
+
+    .bg-dark-lighten-3 {
+      background-color: #f9f9f9;
+    }
+
+    .bg-dark {
+      background-color: #191919;
+    }
+
+    /* border radius */
+
+    .rounded {
+      border-radius: 12px;
+    }
+
+    /* flex */
+    .flex {
+      display: flex;
+    }
+
+    .flex-center {
+      justify-content: center;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+
+
+    .col-4 {
+      flex-direction: column;
+      flex: 1 0 30%;
+    }
+
+    .flex-column {
+      flex-direction: column;
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+
+    .flex-col-2 {
+      flex-wrap: wrap;
+    }
+
+    .flex-col-2>div {
+      flex: 0 0 30%;
+      width: 40%;
+    }
+
+    .gap-10 {
+      gap: 10px;
+    }
+
+    .gap-20 {
+      gap: 20px;
+    }
+
+    .flex-row {
+      flex-direction: row;
+    }
+
+    .flex-grow-1 {
+      flex-grow: 1;
+    }
+
+    .flex-shrink-0 {
+      flex-shrink: 0;
+    }
+
+    .flex-shrink-1 {
+      flex-shrink: 1;
+    }
+
+
+    .flex-basis-50 {
+      flex-basis: 50%;
+    }
+
+    .flex-basis-40 {
+      flex-basis: calc(40% - 20px);
+    }
+
+    .space-between {
+      justify-content: space-between;
+    }
+
+    .align-items-center {
+      align-items: center;
+    }
+
+    /* typography */
+    .font-family-secondary {
+      font-family: 'Lora', serif;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    .semi-bold {
+      font-weight: 600;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+    }
+
+    .fz-14 {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .text-secondary {
+      font-size: 14px;
+      color: #595959;
+    }
+
+    .text-secondary-color {
+      color: #595959;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-start {
+      text-align: start;
+    }
+
+    /* sizes */
+    .w-full {
+      width: 100%;
+    }
+
+    .h-max-content {
+      height: max-content;
+    }
+
+    .h-46 {
+      height: 46px;
+    }
+
+    .h-50 {
+      height: 50px;
+    }
+
+    .w-50 {
+      width: 50px;
+    }
+
+    .w-140 {
+      width: 140px;
+    }
+
+    .w-250 {
+      width: 250px;
+    }
+
+    .w-200 {
+      width: 200px;
+    }
+
+    .w-270 {
+      width: 270px;
+    }
+
+    .w-300 {
+      width: 300px;
+    }
+
+    .max-w-300 {
+      max-width: 300px;
+    }
+
+    .min-w-250 {
+      min-width: 250px;
+    }
+
+    .min-w-200 {
+      min-width: 200px;
+    }
+
+    /* offsets */
+    .p-0 {
+      padding: 0;
+    }
+
+    .p-30 {
+      padding: 30px;
+    }
+
+    .p-10 {
+      padding: 10px;
+    }
+
+    .pv-50 {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .pv-60 {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    .pb-60 {
+      padding-bottom: 60px;
+    }
+
+    .pb-50 {
+      padding-bottom: 50px;
+    }
+
+    .pb-24 {
+      padding-bottom: 24px;
+    }
+
+    .ph-40 {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+    .ph-8 {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    .ph-5 {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .ph-16 {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .pl-24 {
+      padding-left: 24px;
+    }
+
+    .pt-30 {
+      padding-top: 30px;
+    }
+
+    .pt-40 {
+      padding-top: 40px;
+    }
+
+    .pt-50 {
+      padding-top: 50px;
+    }
+
+    .pt-60 {
+      padding-top: 60px;
+    }
+
+    .pt-80 {
+      padding-top: 80px;
+    }
+
+    .pl-8 {
+      padding-left: 8px;
+    }
+
+    .pr-8 {
+      padding-right: 8px;
+    }
+
+    .mb-4 {
+      margin-bottom: 4px;
+    }
+
+    .mb-8 {
+      margin-bottom: 8px;
+    }
+
+    .mb-12 {
+      margin-bottom: 12px;
+    }
+
+    .mb-20 {
+      margin-bottom: 20px;
+    }
+
+    .mb-24 {
+      margin-bottom: 24px;
+    }
+
+    .mb-30 {
+      margin-bottom: 30px;
+    }
+
+    .mb-60 {
+      margin-bottom: 60px;
+    }
+
+    /* other */
+    .display-block {
+      display: block;
+    }
+
+    .hover-accent:hover {
+      color: #8844ff;
+    }
+
+    .pointer {
+      cursor: pointer;
+    }
+
+    .light {
+      color: #ffffff;
+    }
+
+
+    .title {
+      font-size: 42px;
+      line-height: 52px;
+      letter-spacing: 0px;
+    }
+
+    h1 {
+      font-size: 32px;
+      line-height: 42px;
+    }
+
+    h2 {
+      font-size: 26px;
+      line-height: 34px;
+    }
+
+    h3 {
+      font-size: 24px;
+      line-height: 34px;
+    }
+
+    h4 {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+
+    /* custom styles */
+
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      line-height: 26px;
+      background-color: #f1f1f1;
+      color: #191919;
+      display: flex;
+      justify-content: center;
+      max-width: inherit;
+
+    }
+
+    .container {
+      max-width: 600px;
+      min-width: 320px;
+      background: #ffffff;
+      flex-shrink: 1;
+    }
+
+    section,
+    footer {
+      padding: 0 40px;
+    }
+
+    .hero {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      background: url('https://editor.maool.com/images/agency/hero@bg-3.png');
+      background-size: cover;
+    }
+
+    .partners {
+      background: url('https://editor.maool.com/images/agency/cta@bg-10.png');
+      background-size: cover;
+    }
+
+    .statistic {
+      background: url('https://editor.maool.com/images/agency/cta@bg-8.png');
+      background-size: cover;
+    }
+
+    .hero amp-img {
+      height: 300px;
+    }
+
+    .btn-primary {
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 600;
+      padding: 13px 29px;
+      border: none;
+      border-radius: 24px;
+      background-color: #8844FF;
+      color: #ffffff;
+      cursor: pointer;
+      width: fit-content;
+      display: block;
+    }
+
+    .btn-primary-light {
+      background-color: #ffffff;
+      color: #8844FF;
+    }
+
+    .ul-check-icon {
+      list-style: none;
+    }
+
+    .ul-check-icon>li {
+
+      padding-left: 24px;
+      background: url(https://editor.maool.com/images/agency/icon@img-5.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 16px;
+
+    }
+
+    .contact-me-section {
+      background-image: url(https://editor.maool.com/images/agency/cta@bg-9.png);
+      background-size: cover;
+    }
+
+    .fancy-bg {
+      background-image: url(https://editor.maool.com/images/agency/cta@bg-11.png);
+      background-size: cover;
+    }
+
+    .border-bottom-light {
+      border-bottom: 1px solid #ffffff;
+    }
+
+    @media (max-device-width: 600px) {
+      .sm-mb-12 {
+        margin-bottom: 12px;
+      }
+
+      .sm-pt-0 {
+        padding-top: 0;
+      }
+
+      .sm-mb-30 {
+        margin-bottom: 30px;
+      }
+
+      .sm-pt-24 {
+        padding-top: 24px;
+      }
+
+      .sm-display-none {
+        display: none;
+      }
+
+      .sm-flex-basis-100 {
+        flex-basis: 100%;
+      }
+
+      .sm-column-reverse {
+        flex-direction: column-reverse;
+      }
+
+      .col-sm-12-content-centered {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      section {
+        padding: 0 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="flex align-items-center flex-center p-30 ph-40 flex-wrap">
+      <div class="logo mb-12 sm-flex-basis-100 ">
+        <div class="flex-center flex w-full">
+
+          <amp-img src="https://editor.maool.com/images/agency/logo@agency-purple.png" width="110" height="32"
+            alt="logo" />
+        </div>
+      </div>
+      <div class="flex-grow-1 sm-display-none"></div>
+      <nav class="flex bold pointer fz-14">
+        <ul class="hover-accent pr-8">
+          <a>Home</a>
+        </ul>
+        <ul class="hover-accent ph-8">
+          <a>About</a>
+        </ul>
+        <ul class="hover-accent ph-8">
+          <a>Blog</a>
+        </ul>
+        <ul class="hover-accent pl-8">
+          <a>Sale</a>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="row space-between">
+        <div class="col-6 col-sm-12-content-centered pt-50 light">
+          <h1 class="bold mb-12">Template For Your Agency?</h1>
+          <p class="mb-24">
+            Lorem Ipsum is simply dummy text of the printing.
+          </p>
+          <button class="btn-primary btn-primary-light">Read more</button>
+        </div>
+        <div class="col-sm-12-content-centered pt-30">
+          <amp-img class="ph-8" width="250" height="300" src="https://editor.maool.com/images/agency/hero@img-2.png"
+            alt="hero-image" />
+        </div>
+      </div>
+    </section>
+    <section class="pv-60">
+      <div class="flex flex-column align-items-center mb-30">
+        <p class="accent-color semi-bold fz-14">Experience</p>
+        <h2>Solutions</h2>
+        <p class="text-secondary max-w-300 text-center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+      <div class="row space-between">
+        <div class="text-center col-4 flex flex-column align-items-center col-sm-12-content-centered mb-20">
+          <div>
+            <amp-img src="https://editor.maool.com/images/agency/icon@img-13.png" alt="logo" width="50" height="50" />
+          </div>
+          <h3>Research</h3>
+          <p class="text-secondary">Lorem Ipsum is simply dummy text.</p>
+        </div>
+        <div class="text-center col-4 flex flex-column align-items-center col-sm-12-content-centered mb-20">
+          <div>
+            <amp-img src="https://editor.maool.com/images/agency/icon@img-14.png" alt="logo" width="50" height="50" />
+          </div>
+          <h3>Data</h3>
+          <p class="text-secondary">Lorem Ipsum is simply dummy text.</p>
+        </div>
+        <div class="text-center col-4 flex flex-column align-items-center col-sm-12-content-centered">
+          <div>
+            <amp-img src="https://editor.maool.com/images/agency/icon@img-15.png" alt="logo" width="50" height="50" />
+          </div>
+          <h3>Marketing</h3>
+          <p class="text-secondary">Lorem Ipsum is simply dummy text.</p>
+        </div>
+
+      </div>
+    </section>
+    <section class="pv-30 pb-60">
+      <div class="row gap-20">
+        <div class="col-6 col-sm-12-content-centered">
+          <amp-img width="250" height="345.5" src="https://editor.maool.com/images/agency/about@img-5.png" alt="" />
+        </div>
+        <div class="col-6 col-sm-12-content-centered pt-40">
+          <p class="semi-bold accent-color fz-14">Our Vision</p>
+          <h3 class="mb-12">Why Wait? Start Tour Own Business</h3>
+          <ul class="ul-check-icon mb-24 fz-14 text-start">
+            <li class="mb-8">Talk more about your project</li>
+            <li class="mb-8">We help businesses grow fast</li>
+            <li class="mb-8">Change the way for business.</li>
+          </ul>
+          <button class="btn-primary">Read more</button>
+        </div>
+      </div>
+    </section>
+    <section class="pv-50 row space-between partners">
+
+      <div class="col-4 col-sm-12-content-centered sm-mb-12">
+        <amp-img width="140" height="52" src="https://editor.maool.com/images/agency/client@img-4.png" alt="" />
+      </div>
+      <div class="col-4 col-sm-12-content-centered sm-mb-12">
+        <amp-img width="140" height="52" src="https://editor.maool.com/images/agency/client@img-5.png" alt="" />
+      </div>
+      <div class="col-4 col-sm-12-content-centered">
+        <amp-img width="140" height="52" src="https://editor.maool.com/images/agency/client@img-6.png" alt="" />
+      </div>
+    </section>
+    <section class="pv-60">
+      <div class="flex flex-column align-items-center mb-30">
+        <p class="accent-color semi-bold fz-14">Our Service</p>
+        <h2>What We Can</h2>
+        <p class="text-secondary max-w-300 text-center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+      <div class="row gap-20 mb-60">
+        <div class="col-6 col-sm-12-content-centered p-30 bg-dark-lighten-3 rounded">
+          <div>
+            <amp-img src="https://editor.maool.com/images/agency/icon@img-16.png" alt="logo" width="50" height="50"
+              class="mb-8">
+          </div>
+          <h4 class="mb-8">Design</h4>
+          <p class="text-secondary mb-12">Lorem Ipsum is text simply dummy Ipsum text.</p>
+          <a class="semi-bold mb-8">Read Now →</a>
+        </div>
+        <div class="col-6 col-sm-12-content-centered p-30 bg-dark-lighten-3 rounded">
+          <div>
+            <amp-img src="https://editor.maool.com/images/agency/icon@img-17.png" alt="logo" width="50" height="50"
+              class="mb-8">
+          </div>
+          <h4 class="mb-8">Design</h4>
+          <p class="text-secondary mb-12">Lorem Ipsum is text simply dummy Ipsum text.</p>
+          <a class="semi-bold mb-8">Read Now →</a>
+        </div>
+        <div class="col-6 col-sm-12-content-centered p-30 bg-dark-lighten-3 rounded">
+          <div>
+            <amp-img src="https://editor.maool.com/images/agency/icon@img-18.png" alt="logo" width="50" height="50"
+              class="mb-8">
+          </div>
+          <h4 class="mb-8">Design</h4>
+          <p class="text-secondary mb-12">Lorem Ipsum is text simply dummy Ipsum text.</p>
+          <a class="semi-bold mb-8">Read Now →</a>
+        </div>
+        <div class="col-6 col-sm-12-content-centered p-30 bg-dark-lighten-3 rounded">
+          <div>
+            <amp-img src="https://editor.maool.com/images/agency/icon@img-19.png" alt="logo" width="50" height="50"
+              class="mb-8">
+          </div>
+          <h4 class="mb-8">Design</h4>
+          <p class="text-secondary mb-12">Lorem Ipsum is text simply dummy Ipsum text.</p>
+          <a class="semi-bold mb-8">Read Now →</a>
+        </div>
+      </div>
+      <div class="row sm-column-reverse gap-20">
+        <div class="col-6 col-sm-12-content-centered pt-60 sm-pt-24">
+          <p class="semi-bold secondary-color mb-4">About Us</p>
+          <h3 class="mb-4">Email Design For Your Business</h3>
+          <p class="text-secondary-color mb-20">Lorem Ipsum is simply text dummy text of the.</p>
+          <button class="btn-primary">Read more</button>
+        </div>
+        <div class="col-6 col-sm-12-content-centered">
+          <amp-img src="https://editor.maool.com/images/agency/about@img-6.png" width="270" height="373" alt="about"
+            class="rounded">
+        </div>
+      </div>
+    </section>
+    <section class="pv-50 row space-between statistic light">
+      <div class="text-center col-sm-12-content-centered">
+        <p class="font-family-secondary bold mb-12 title">82</p>
+        <p class="semi-bold">
+          Project Completed
+        </p>
+      </div>
+      <div class="text-center col-sm-12-content-centered">
+        <p class="font-family-secondary bold mb-12 title">47</p>
+        <p class="semi-bold">
+          Team Members
+        </p>
+      </div>
+      <div class="text-center col-sm-12-content-centered">
+        <p class="font-family-secondary bold mb-12 title">61</p>
+        <p class="semi-bold">
+          Team Members
+        </p>
+      </div>
+      <div class="text-center col-sm-12-content-centered">
+        <p class="font-family-secondary bold mb-12 title">50</p>
+        <p class="semi-bold">
+          Team Members
+        </p>
+      </div>
+    </section>
+    <section class="pv-60">
+
+      <div class="flex flex-column align-items-center mb-30">
+        <p class="accent-color semi-bold fz-14">Our Portfolio</p>
+        <h2>Look at Our Works</h2>
+        <p class="text-secondary max-w-300 text-center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+      <div class="row gap-20">
+        <div class="col-3-5 col-sm-12-content-centered">
+          <div class="w-full">
+
+            <amp-img class="rounded" src="https://editor.maool.com/images/agency/portfolio@img-10.png" width="300"
+              height="250" alt="image" layout="responsive" />
+          </div>
+        </div>
+        <div class="col-2-5 col-sm-12-content-centered">
+          <div class="w-full">
+
+            <amp-img class="rounded" src="https://editor.maool.com/images/agency/portfolio@img-11.png" width="200"
+              height="250" alt="image" layout="responsive" />
+          </div>
+        </div>
+        <div class="col-2-5 col-sm-12-content-centered">
+          <div class="w-full">
+
+            <amp-img class="rounded" src="https://editor.maool.com/images/agency/portfolio@img-12.png" width="200"
+              height="250" alt="image" layout="responsive" />
+          </div>
+        </div>
+        <div class="col-3-5 col-sm-12-content-centered">
+          <div class="w-full">
+
+            <amp-img class="rounded" src="https://editor.maool.com/images/agency/portfolio@img-13.png" width="300"
+              height="250" alt="image" layout="responsive" />
+          </div>
+        </div>
+
+      </div>
+      <div class="row pt-60 gap-20">
+        <div class="col-6 col-sm-12-content-centered pt-40 sm-mb-30 sm-pt-0">
+          <p class="semi-bold accent-color mb-4">About Us</p>
+          <h3 class="mb-4">Work Together For Succes</h3>
+          <p class="text-secondary-color mb-20">Lorem Ipsum is simply text dummy text of the.</p>
+          <button class="btn-primary sm-mb-12">Read more</button>
+        </div>
+        <div class="col-6 col-sm-12-content-centered">
+          <div class="flex flex-column gap-20 w-full">
+            <div class="bg-dark-lighten-3 rounded ph-16 h-46 flex space-between align-items-center">
+              <p class="bold display-block">Design</p>
+              <amp-img src="https://editor.maool.com/images/agency/icon@img-20.png" width="24" height="24" alt="icon" />
+            </div>
+            <div class="bg-dark-lighten-3 rounded ph-16 h-46 flex space-between align-items-center">
+              <p class="bold display-block">Technology</p>
+              <amp-img src="https://editor.maool.com/images/agency/icon@img-20.png" width="24" height="24" alt="icon" />
+            </div>
+            <div class="bg-dark-lighten-3 rounded ph-16 h-46 flex space-between align-items-center">
+              <p class="bold display-block">eCommerce</p>
+              <amp-img src="https://editor.maool.com/images/agency/icon@img-20.png" width="24" height="24" alt="icon" />
+            </div>
+            <div class="bg-dark-lighten-3 rounded ph-16 h-46 flex space-between align-items-center">
+              <p class="bold display-block">Marketing</p>
+              <amp-img src="https://editor.maool.com/images/agency/icon@img-20.png" width="24" height="24" alt="icon" />
+            </div>
+            <div class="bg-dark-lighten-3 rounded ph-16 h-46 flex space-between align-items-center">
+              <p class="bold display-block">Development</p>
+              <amp-img src="https://editor.maool.com/images/agency/icon@img-20.png" width="24" height="24" alt="icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pv-50 contact-me-section">
+      <div class="row space-between">
+        <div class="col-6 col-sm-12-content-centered light">
+          <h1 class="bold mb-12">Contact Me To Get Your Work Done</h1>
+          <p class="mb-24">
+            Lorem Ipsum is simply dummy text of the printing.
+          </p>
+          <button class="btn-primary btn-primary-light">Read more</button>
+        </div>
+        <div class="col-sm-12-content-centered pt-30">
+          <amp-img class="ph-8" width="250" height="180" src="https://editor.maool.com/images/agency/cta@img-1.png"
+            alt="hero-image" />
+        </div>
+      </div>
+    </section>
+    <section class="pv-60">
+      <div class="flex flex-column align-items-center mb-30">
+        <p class="accent-color semi-bold fz-14">Experience</p>
+        <h2>Solutions</h2>
+        <p class="text-secondary max-w-300 text-center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+      <div class="row gap-10 mb-30">
+        <div class="col-4 col-sm-12-content-centered ">
+          <div class="mb-4">
+            <amp-img class="rounded display-block" width="160" height="207"
+              src="https://editor.maool.com/images/agency/team@img-1.png" alt="profile-image" />
+          </div>
+          <h4>Sandra Robert</h4>
+          <p class="text-secondary mb-12">Graphic Designer</p>
+          <div class="flex">
+            <div class="ph-5">
+              <amp-img width="30" height="30" src="https://editor.maool.com/images/social/sms4/facebook.png"
+                alt="social-image" />
+            </div>
+            <div class="ph-5">
+              <amp-img width="30" height="30" src="https://editor.maool.com/images/social/sms4/instagram.png"
+                alt="social-image" />
+            </div>
+            <div class="ph-5">
+              <amp-img width="30" height="30" src="https://editor.maool.com/images/social/sms4/linkedin.png"
+                alt="social-image" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-sm-12-content-centered ">
+          <div class="mb-4">
+            <amp-img class="rounded" width="160" height="207"
+              src="https://editor.maool.com/images/agency/team@img-2.png" alt="profile-image" />
+          </div>
+          <h4>Sandra Robert</h4>
+          <p class="text-secondary mb-12">Graphic Designer</p>
+          <div class="flex">
+            <div class="ph-5">
+              <amp-img width="30" height="30" src="https://editor.maool.com/images/social/sms4/facebook.png"
+                alt="social-image" />
+            </div>
+            <div class="ph-5">
+              <amp-img width="30" height="30" src="https://editor.maool.com/images/social/sms4/instagram.png"
+                alt="social-image" />
+            </div>
+            <div class="ph-5">
+              <amp-img width="30" height="30" src="https://editor.maool.com/images/social/sms4/linkedin.png"
+                alt="social-image" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-sm-12-content-centered">
+          <div class="mb-4">
+            <amp-img class="rounded" width="160" height="207"
+              src="https://editor.maool.com/images/agency/team@img-3.png" alt="profile-image" />
+          </div>
+          <h4>Sandra Robert</h4>
+          <p class="text-secondary mb-12">Graphic Designer</p>
+          <div class="flex">
+            <div class="ph-5">
+              <amp-img width="30" height="30" src="https://editor.maool.com/images/social/sms4/facebook.png"
+                alt="social-image" />
+            </div>
+            <div class="ph-5">
+              <amp-img width="30" height="30" src="https://editor.maool.com/images/social/sms4/instagram.png"
+                alt="social-image" />
+            </div>
+            <div class="ph-5">
+              <amp-img width="30" height="30" src="https://editor.maool.com/images/social/sms4/linkedin.png"
+                alt="social-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row gap-20">
+        <div class="col-6 col-sm-12-content-centered">
+          <div class="bg-dark-lighten-3 rounded p-30">
+            <div>
+              <amp-img width="50" height="50" src="https://editor.maool.com/images/agency/user@img-1.png"
+                alt="profile-image" />
+            </div>
+            <h4>Sandra Robert</h4>
+            <div>
+              <amp-img width="80" height="14" src="https://editor.maool.com/images/agency/icon@img-12.png"
+                alt="social-image" />
+            </div>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has been.</p>
+            <div>
+              <amp-img width="120" height="45" src="https://editor.maool.com/images/agency/client@img-2.png"
+                alt="social-image" />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-12-content-centered">
+          <div class="bg-dark-lighten-3 rounded p-30">
+            <div>
+              <amp-img width="50" height="50" src="https://editor.maool.com/images/agency/user@img-2.png"
+                alt="profile-image" />
+            </div>
+            <h4>Sandra Robert</h4>
+            <div>
+              <amp-img width="80" height="14" src="https://editor.maool.com/images/agency/icon@img-12.png"
+                alt="social-image" />
+            </div>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has been.</p>
+            <div>
+              <amp-img width="120" height="45" src="https://editor.maool.com/images/agency/client@img-1.png"
+                alt="social-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fancy-bg pb-50 pt-80">
+      <div class="row">
+        <div class="col-6 col-sm-12-content-centered light">
+
+          <p class="bold">Contact Us</p>
+          <h2 class="mb-20">Contact Me To Get Your Work Done</h4>
+            <button class="btn-primary btn-primary-light">Read more</button>
+
+        </div>
+      </div>
+
+    </section>
+    <section class="pv-60">
+      <div class="flex flex-column align-items-center mb-30">
+        <p class="accent-color semi-bold fz-14">Our News</p>
+        <h2>Popular Blog Posts</h2>
+        <p class="text-secondary max-w-300 text-center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+      <div class="row gap-20 mb-60">
+        <div class="col-6 col-sm-12-content-centered mb-24">
+          <div class="mb-12">
+            <amp-img class="rounded" width="250" height="180"
+              src="https://editor.maool.com/images/agency/blog@img-5.png" alt="social-image" />
+          </div>
+          <h4 class="mb-4">SEO and Digital Marketing</h4>
+          <p class="text-secondary mb-20">Lorem Ipsum is simply dummy text of the printing Ipsum is simply.</p>
+          <button class="btn-primary">Read more</button>
+        </div>
+        <div class="col-6 col-sm-12-content-centered">
+          <div class="mb-12">
+            <amp-img class="rounded" width="250" height="180"
+              src="https://editor.maool.com/images/agency/blog@img-6.png" alt="social-image" />
+          </div>
+          <h4 class="mb-4">SEO and Digital Marketing</h4>
+          <p class="text-secondary mb-20">Lorem Ipsum is simply dummy text of the printing Ipsum is simply.</p>
+          <button class="btn-primary">Read more</button>
+        </div>
+      </div>
+      <div class="row gap-20">
+        <div class="col-6 col-sm-12-content-centered">
+          <div class="">
+            <amp-img class="rounded" width="250" height="300"
+              src="https://editor.maool.com/images/agency/about@img-7.png" alt="social-image" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-12-content-centered">
+          <p class="accent-color semi-bold fz-14 pt-50 mb-12">Founder Quote</p>
+          <h4 class="mb-12">“Wonder What Your Customer Really Wants? Ask. Don’t Tell.”</h4>
+          <p class="bold">Lisa Stone</p>
+          <p class="text-secondary">Co-Founder</p>
+        </div>
+      </div>
+    </section>
+    <footer class="light bg-dark pb-50">
+      <div class="row border-bottom-light pt-40 gap-20 pb-24">
+        <div class="col-4 col-sm-12-content-centered">
+          <div class="mb-12">
+            <amp-img width="110" height="31" src="https://editor.maool.com/images/agency/logo@agency-white.png"
+              alt="social-image" />
+          </div>
+          <p class="fz-14 mb-12">65 E.Forest Hills,<br />
+            New York 11209 </p>
+          <div class="flex">
+            <div class="ph-5">
+              <amp-img width="30" height="30" src="https://editor.maool.com/images/social/sms2/facebook.png"
+                alt="social-image" />
+            </div>
+            <div class="ph-5">
+              <amp-img width="30" height="30" src="https://editor.maool.com/images/social/sms2/instagram.png"
+                alt="social-image" />
+            </div>
+            <div class="ph-5">
+              <amp-img width="30" height="30" src="https://editor.maool.com/images/social/sms2/linkedin.png"
+                alt="social-image" />
+            </div>
+            <div class="ph-5">
+              <amp-img width="30" height="30" src="https://editor.maool.com/images/social/sms2/twitter.png"
+                alt="social-image" />
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-sm-12-content-centered">
+          <p class="bold mb-20">Contact Info</p>
+          <p class="fz-14">Call us: <br />
+            +01 (234) 567-891<br />
+            E-mail us:<br />
+            support@maool.com</p>
+        </div>
+        <div class="col-4 col-sm-12-content-centered">
+          <p class="bold mb-20">More Links</p>
+          <p class="fz-14">Help Center<br />
+            My Account<br />
+            Contact<br />
+            Privacy<br /></p>
+        </div>
+      </div>
+      <div class="flex space-between pt-30">
+
+        <p class="fz-14">@2021 Maool Inc. All Rights Reserved.</p>
+
+        <p class="fz-14">Unsubscribe</p>
+
+      </div>
+
+    </footer>
+  </div>
+</body>
+
+</html>
