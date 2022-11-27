@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html ⚡4email data-css-strict>
+
+<head>
+  <meta charset="utf-8" />
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  <style amp4email-boilerplate>
+    body {
+      visibility: hidden;
+    }
+  </style>
+  <style amp-custom>
+    /* reset styles */
+
+    body,
+    * {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    amp-img {
+      display: block;
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+
+    /* grid system */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+    }
+
+    .col-6 {
+      flex: 0 0 48%;
+      max-width: 48%;
+    }
+
+    .col-4 {
+      flex: 0 0 33%;
+      max-width: 33%;
+    }
+
+    .col-3-5 {
+      flex: 0 0 58%;
+      max-width: 58%;
+    }
+
+    .col-2-5 {
+      flex: 0 0 38%;
+      max-width: 38%;
+    }
+
+    .col-12-content-centered {
+      flex: 0 0 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* helper classes */
+    /* colors */
+    .accent-color {
+      color: #8844ff;
+    }
+
+    .secondary-color {
+      color: #3f52c6;
+    }
+
+    .bg-dark-lighten-3 {
+      background-color: #f9f9f9;
+    }
+
+    .bg-dark {
+      background-color: #191919;
+    }
+
+    .bg-gray {
+      background-color: #f1f1f1;
+    }
+
+    /* border radius */
+
+    .rounded {
+      border-radius: 12px;
+    }
+
+    /* flex */
+    .flex {
+      display: flex;
+    }
+
+    .flex-center {
+      justify-content: center;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+
+
+    .col-4 {
+      flex-direction: column;
+      flex: 1 0 30%;
+    }
+
+    .flex-column {
+      flex-direction: column;
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+
+    .flex-col-2 {
+      flex-wrap: wrap;
+    }
+
+    .flex-col-2>div {
+      flex: 0 0 30%;
+      width: 40%;
+    }
+
+    .gap-10 {
+      gap: 10px;
+    }
+
+    .gap-20 {
+      gap: 20px;
+    }
+
+    .flex-row {
+      flex-direction: row;
+    }
+
+    .flex-grow-1 {
+      flex-grow: 1;
+    }
+
+    .flex-shrink-0 {
+      flex-shrink: 0;
+    }
+
+    .flex-shrink-1 {
+      flex-shrink: 1;
+    }
+
+
+    .flex-basis-50 {
+      flex-basis: 50%;
+    }
+
+    .flex-basis-40 {
+      flex-basis: calc(40% - 20px);
+    }
+
+    .space-between {
+      justify-content: space-between;
+    }
+
+    .align-items-center {
+      align-items: center;
+    }
+
+    /* typography */
+    .font-family-secondary {
+      font-family: 'Lora', serif;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    .semi-bold {
+      font-weight: 600;
+    }
+
+    .text-lighter {
+      font-weight: lighter;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+    }
+
+    .fz-14 {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .text-secondary {
+      font-size: 14px;
+      color: #595959;
+    }
+
+    .text-lighter {
+      color: #191919;
+    }
+
+    .text-secondary-color {
+      color: #595959;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-start {
+      text-align: start;
+    }
+
+    /* sizes */
+    .w-full {
+      width: 100%;
+    }
+
+    .h-max-content {
+      height: max-content;
+    }
+
+    .h-46 {
+      height: 46px;
+    }
+
+    .h-50 {
+      height: 50px;
+    }
+
+    .w-50 {
+      width: 50px;
+    }
+
+    .w-140 {
+      width: 140px;
+    }
+
+    .w-250 {
+      width: 250px;
+    }
+
+    .w-200 {
+      width: 200px;
+    }
+
+    .w-270 {
+      width: 270px;
+    }
+
+    .w-300 {
+      width: 300px;
+    }
+
+    .max-w-300 {
+      max-width: 300px;
+    }
+
+    .min-w-250 {
+      min-width: 250px;
+    }
+
+    .min-w-200 {
+      min-width: 200px;
+    }
+
+    /* offsets */
+    .p-0 {
+      padding: 0;
+    }
+
+    .p-30 {
+      padding: 30px;
+    }
+
+    .p-10 {
+      padding: 10px;
+    }
+
+    .pv-50 {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .pv-60 {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    .pb-60 {
+      padding-bottom: 60px;
+    }
+
+    .pb-50 {
+      padding-bottom: 50px;
+    }
+
+    .pb-24 {
+      padding-bottom: 24px;
+    }
+
+    .ph-40 {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+    .ph-12 {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    .ph-5 {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .ph-16 {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .pl-24 {
+      padding-left: 24px;
+    }
+
+    .pt-30 {
+      padding-top: 30px;
+    }
+
+    .pt-40 {
+      padding-top: 40px;
+    }
+
+    .pt-50 {
+      padding-top: 50px;
+    }
+
+    .pt-60 {
+      padding-top: 60px;
+    }
+
+    .pt-80 {
+      padding-top: 80px;
+    }
+
+    .pl-12 {
+      padding-left: 12px;
+    }
+
+    .pr-12 {
+      padding-right: 12px;
+    }
+
+    .mb-4 {
+      margin-bottom: 4px;
+    }
+
+    .mb-8 {
+      margin-bottom: 8px;
+    }
+
+    .mb-12 {
+      margin-bottom: 12px;
+    }
+
+    .mb-20 {
+      margin-bottom: 20px;
+    }
+
+    .mb-24 {
+      margin-bottom: 24px;
+    }
+
+    .mb-30 {
+      margin-bottom: 30px;
+    }
+
+    .mb-40 {
+      margin-bottom: 40px;
+    }
+
+    .mb-60 {
+      margin-bottom: 60px;
+    }
+
+    /* other */
+    .display-block {
+      display: block;
+    }
+
+    .hover-accent:hover {
+      color: #666666;
+    }
+
+    .pointer {
+      cursor: pointer;
+    }
+
+    .light {
+      color: #ffffff;
+    }
+
+
+    .title {
+      font-size: 42px;
+      line-height: 52px;
+      letter-spacing: 0px;
+    }
+
+    h1 {
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    h2 {
+      font-size: 26px;
+      line-height: 34px;
+    }
+
+    h3 {
+      font-size: 24px;
+      line-height: 34px;
+    }
+
+    h4 {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+
+    /* custom styles */
+
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      line-height: 26px;
+      background-color: #f1f1f1;
+      color: #191919;
+      display: flex;
+      justify-content: center;
+      max-width: inherit;
+
+    }
+
+    .container {
+      max-width: 600px;
+      min-width: 320px;
+      background: #ffffff;
+      flex-shrink: 1;
+    }
+
+    section,
+    footer,
+    header {
+      padding: 0 40px;
+    }
+
+    .hero {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      background: url('https://editor.maool.com/images/agency/hero@bg-3.png');
+      background-size: cover;
+    }
+
+    .partners {
+      background: url('https://editor.maool.com/images/agency/cta@bg-10.png');
+      background-size: cover;
+    }
+
+    .statistic {
+      background: url('https://editor.maool.com/images/agency/cta@bg-8.png');
+      background-size: cover;
+    }
+
+    .hero amp-img {
+      height: 300px;
+    }
+
+    .btn-primary {
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 600;
+      padding: 13px 29px;
+      border: none;
+      border-radius: 24px;
+      background-color: #8844FF;
+      color: #ffffff;
+      cursor: pointer;
+      width: fit-content;
+      display: block;
+    }
+
+    .btn-primary-light {
+      background-color: #ffffff;
+      color: #8844FF;
+    }
+
+    .ul-check-icon {
+      list-style: none;
+    }
+
+    .ul-check-icon>li {
+
+      padding-left: 24px;
+      background: url(https://editor.maool.com/images/agency/icon@img-5.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 16px;
+
+    }
+
+    .contact-me-section {
+      background-image: url(https://editor.maool.com/images/agency/cta@bg-9.png);
+      background-size: cover;
+    }
+
+    .fancy-bg {
+      background-image: url(https://editor.maool.com/images/agency/cta@bg-11.png);
+      background-size: cover;
+    }
+
+    .border-bottom-light {
+      border-bottom: 1px solid #ffffff;
+    }
+
+    hr {
+      width: 100%;
+      background: none;
+      height: 0px;
+      border: none;
+      border-bottom: 1px solid #efefef;
+    }
+
+    @media (max-device-width: 600px) {
+      .sm-mb-12 {
+        margin-bottom: 12px;
+      }
+
+      .sm-pt-0 {
+        padding-top: 0;
+      }
+
+      .sm-mb-30 {
+        margin-bottom: 30px;
+      }
+
+      .sm-pt-24 {
+        padding-top: 24px;
+      }
+
+      .sm-display-none {
+        display: none;
+      }
+
+      .sm-flex-basis-100 {
+        flex-basis: 100%;
+      }
+
+      .sm-column-reverse {
+        flex-direction: column-reverse;
+      }
+
+      .col-sm-12-content-centered {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      section,
+      footer,
+      header {
+        padding: 0 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="pt-60 pb-50">
+      <div class="row">
+        <div class="col-12-content-centered mb-24">
+          <div>
+            <amp-img width="110" height="40" src="https://editor.maool.com/images/starto/logo@starto-black.png"
+              alt="logo" />
+          </div>
+        </div>
+        <hr class="mb-12" />
+        <div class="col-12-content-centered mb-12">
+          <nav class="flex bold pointer fz-14">
+            <ul class="hover-accent pr-12">
+              <a href="https://github.com/jazzkrop">Home</a>
+            </ul>
+            <ul class="hover-accent ph-12">
+              <a>About</a>
+            </ul>
+            <ul class="hover-accent ph-12">
+              <a>Blog</a>
+            </ul>
+            <ul class="hover-accent pl-12">
+              <a>Sale</a>
+            </ul>
+          </nav>
+        </div>
+        <hr />
+      </div>
+    </header>
+    <section>
+      <div class="text-center">
+        <p class="bold mb-4">FAST . SIMPLE . SECURE</p>
+        <h1 class="text-lighter mb-30">Keep Your Business <br />
+          At Your Fingertips</h1>
+      </div>
+      <div class="flex gap-20 flex-center">
+        <div class="">
+          <amp-img width="130" height="40" src="https://editor.maool.com/images/starto/btn@app-dark-ios.png"
+            alt="social-image" />
+        </div>
+        <div class="">
+          <amp-img width="130" height="40" src="https://editor.maool.com/images/starto/btn@app-dark-android.png"
+            alt="social-image" />
+        </div>
+      </div>
+    </section>
+    <div>
+      <amp-img class="display-block" width="600" height="450"
+        src="https://editor.maool.com/images/starto/hero@promotion-app-download.png" alt="promo-image"
+        layout="responsive" />
+    </div>
+    <section class="bg-gray pt-40 text-center pb-50">
+      <p class="bold mb-24">DOWNLOAD THE APP</p>
+
+      <div class="flex gap-20 flex-center mb-24">
+        <div class="">
+          <amp-img width="130" height="40" src="https://editor.maool.com/images/starto/btn@app-dark-ios.png"
+            alt="social-image" />
+        </div>
+        <div class="">
+          <amp-img width="130" height="40" src="https://editor.maool.com/images/starto/btn@app-dark-ios.png"
+            alt="social-image" />
+        </div>
+      </div>
+      <p class="text-secondary-color mb-30">No longer want to recevie there emails? <span
+          class="bold">Unsubscribe</span><br />65 E.
+        Honey Creek Drive,
+        Forest Hills Brooklyn, New York 1120</p>
+      <h4 class="bold mb-30">FOLLOW US</h4>
+      <div class="row mb-30">
+        <div class="col-12-content-centered">
+          <div class="flex">
+            <div class="ph-5">
+              <amp-img width="40" height="40" src="https://editor.maool.com/images/social/sms4/linkedin.png"
+                alt="social-image" />
+            </div>
+            <div class="ph-5">
+              <amp-img width="40" height="40" src="https://editor.maool.com/images/social/sms4/youtube.png"
+                alt="social-image" />
+            </div>
+            <div class="ph-5">
+              <amp-img width="40" height="40" src="https://editor.maool.com/images/social/sms4/instagram.png"
+                alt="social-image" />
+            </div>
+            <div class="ph-5">
+              <amp-img width="40" height="40" src="https://editor.maool.com/images/social/sms4/twitter.png"
+                alt="social-image" />
+            </div>
+            <div class="ph-5">
+              <amp-img width="40" height="40" src="https://editor.maool.com/images/social/sms4/facebook.png"
+                alt="social-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-secondary-color">FAQ'S | SHIPPING | RETURNS | CONTACT</p>
+    </section>
+  </div>
+</body>
+
+</html>
